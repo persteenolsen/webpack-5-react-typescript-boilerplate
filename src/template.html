@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+    <base href="/" />
+    <title>Webpack 5 React and TypeScript Boilerplate</title>
+	
+	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+    
+	
+  <noscript>
+    <strong>This React app do not work properly without JavaScript enabled. Please enable it to
+      continue.</strong>
+  </noscript>
+  
+  	 <!--Note: For sure needed when using IE 11 -->
+	 <!--Babel polyfills are not working with TextArea in React Hook Forms neigther do import core-js/stable and regenerator-runtime/runtime -->
+	 <!--Note: As an alternative use import core-js/stable and regenerator-runtime/runtime in EditPost and CreatePost-->
+	 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.12.1/polyfill.min.js"></script>-->		 
+    
+    <!-- Note: Ready for making a dropdown Bootstrap navigation menu - if you like -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	
+		
+     <!-- Note: Ready for making a dropdown Bootstrap navigation menu - if wanted -->
+    <script>
+             		 
+		 $('body').click(function(evt){    
+            
+			if(!$(evt.target).is('#container')) {
+               		
+				 if(!$(".navbar-collapse").is(":hidden")){
+				     $('.navbar-collapse').collapse('hide');
+                    // alert("The mobile menu will be hidden....");
+                }
+			  }
+         });
+		 
+ 
+      
+    </script>
+   
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+			   
+			   <div id="nocrome"></div>
+               <div id="root"></div>
+			   
+			 </div>
+		</div>
+	</div>
+	
+	
+	<script type="application/javascript">
+      
+	  // Showing a message to the User if not using Google Chrome !
+	  if (  ! (/Chrome/.test(window.navigator.userAgent ))){ 
+	    
+	      //window.location.href = '/ie.html';
+	      // Setting the GUI with the value returned from the Web API
+	     document.getElementById("nocrome").innerHTML = "<br /><b>Please try the Google Chrome Browser when using this React App !</b>";
+	     }
+		 
+	</script>
+
+</body>
+</html>
