@@ -1,7 +1,7 @@
 {
-  "name": "webpack-5-react-boilerplate-master",
+  "name": "webpack-5-react-typescript-boilerplate-master",
   "version": "2.0.0",
-  "description": "A webpack 5 boilerplate with React",
+  "description": "A webpack 5 boilerplate with React and TypeScript",
   "main": "index.js",
   "author": "Per Olsen",
   "license": "MIT",
@@ -11,10 +11,11 @@
     "prod": "http-server ./dist -a localhost -p 8005 -o"
   },
   "keywords": [
-    "webpack",
     "webpack 5",
-    "webpack boilerplate"
-  ],
+    "Babel 7",
+    "React",
+    "TypeScript"
+    ],
   "devDependencies": {
     "@babel/core": "^7.12.1",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
@@ -52,7 +53,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/persteenolsen/webpack-5-react-boilerplate"
+    "url": "https://github.com/persteenolsen/webpack-5-react-typescript-boilerplate"
   },
   "dependencies": {
     "@babel/runtime": "^7.13.10",

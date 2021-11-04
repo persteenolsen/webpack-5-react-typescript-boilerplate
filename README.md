@@ -1,4 +1,4 @@
-# Webpack 5 React Boilerplate
+# Webpack 5 React TypeScript Boilerplate
 
 Webpack 5 boilerplate using React, TypeScript, Babel 7, PostCSS and Sass with a hot dev server and an optimized production build.
 

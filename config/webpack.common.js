@@ -5,6 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
+// Doing TypeScript type checking instead of TypeScript / TSC
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 
 //const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
@@ -72,14 +73,16 @@ module.exports = {
   // Determine how modules within the project are treated
   module: {
     rules: [
-	
-      // JavaScript: Use Babel to transpile JavaScript, React and TS files
+	    
+      // Note: These 3 rules could likely be handled in one test: statement
+      // Use Babel to transpile JavaScript ES6+ to ES5
       {
 		  test: /\.js$/, 
 		  exclude: /node_modules/, 
 		  use: ['babel-loader']
 		},
 	  
+     // Use Babel to transpile JavaScript ES6+ / React files to ES5
 	   {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
@@ -88,6 +91,7 @@ module.exports = {
         }
       },
 	  
+     // Use Babel to transpile TypeScript and TypeScript / React files to ES5
 	   {
         test: /\.(ts|tsx)$/,
         exclude: /node_modules/,
