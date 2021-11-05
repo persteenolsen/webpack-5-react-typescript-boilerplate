@@ -6,7 +6,7 @@ import ReactDOM from "react-dom";
 // Use the valid HTML tags and the statement will pass TypeScript types checking  
 
 import { FC } from 'react'
-const Hello: FC = () => <p><div style={{color: "green"}}>Hello World at the {new Date().toLocaleDateString()} :-) <b> - React with TypeScript</b></div></p>
+const Hello: FC = () => <p><div style={{color: "green"}}>Hello World :-) <b> - React with TypeScript</b> served at the {new Date().toLocaleDateString()}</div></p>
 
 
 //ReactDOM.render(
@@ -34,7 +34,7 @@ class About extends React.Component {
                 <br/> <br/>
 				
                 <b>Last Updated</b>  <br />
-                - 04-11-2021 <br /> <br />
+                - 05-11-2021 <br /> <br />
                 
 				
                 <b>Main functionality</b> <br />

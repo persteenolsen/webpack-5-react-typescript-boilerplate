@@ -74,17 +74,12 @@ module.exports = {
   module: {
     rules: [
 	    
-      // Note: These 3 rules could likely be handled in one test: statement
-      // Use Babel to transpile JavaScript ES6+ to ES5
-      {
-		  test: /\.js$/, 
-		  exclude: /node_modules/, 
-		  use: ['babel-loader']
-		},
-	  
-     // Use Babel to transpile JavaScript ES6+ / React files to ES5
+      // Note: These 2 rules could likely be handled in one test: statement.
+      // However, using 2seperate statements each sttament could have different options if needed
+      
+      // Use Babel to transpile JavaScript ES6+ / React files to ES5
 	   {
-        test: /\.(js|jsx)$/,
+        test: /\.(jsx|js)$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader"
@@ -93,7 +88,7 @@ module.exports = {
 	  
      // Use Babel to transpile TypeScript and TypeScript / React files to ES5
 	   {
-        test: /\.(ts|tsx)$/,
+        test: /\.(tsx|ts)$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader"
