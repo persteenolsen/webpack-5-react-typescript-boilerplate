@@ -1,7 +1,7 @@
 {
   "name": "webpack-5-react-typescript-boilerplate",
   "version": "2.0.0",
-  "description": "A webpack 5 boilerplate with React and TypeScript",
+  "description": "A webpack 5 boilerplate with React TypeScript",
   "main": "index.js",
   "author": "Per Olsen",
   "license": "MIT",

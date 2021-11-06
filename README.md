@@ -19,6 +19,7 @@ npm prod
 
 - [webpack](https://webpack.js.org/)
 - [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
 - [Babel](https://babeljs.io/)
 - [Sass](https://sass-lang.com/)
 - [PostCSS](https://postcss.org/)
@@ -37,7 +38,7 @@ npm prod
 
 # TypeScript
 
-- [`@babel/preset-typescript`] - Babel will be able to use TypeScript
+- [`@babel/preset-typescript`](https://babeljs.io/docs/en/babel-preset-typescript) - Babel will be able to use TypeScript
 
 
 # webpack
@@ -48,7 +49,7 @@ npm prod
 - [`webpack-merge`](https://github.com/survivejs/webpack-merge) - Simplify development/production configuration
 - [`cross-env`](https://github.com/kentcdodds/cross-env) - Cross platform configuration
 
-- [`fork-ts-checker-webpack-plugin`] - Lets Webpack do the TypeScript type checking instead of Babel or TypeScript compiler - TSC :
+- [`fork-ts-checker-webpack-plugin`] - Lets Webpack do the TypeScript type checking instead of TypeScript compiler - TSC :
 
 # Babel
 

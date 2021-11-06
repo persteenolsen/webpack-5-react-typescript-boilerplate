@@ -30,11 +30,11 @@ class About extends React.Component {
 			  
 		       <h2>Description</h2><br />
   
-                - This single page application was made in React, TypeScript with a Webpack 5 configuration
+                - This single page application was made in React, TypeScript and Babel 7 with a Webpack 5 configuration
                 <br/> <br/>
 				
                 <b>Last Updated</b>  <br />
-                - 05-11-2021 <br /> <br />
+                - 06-11-2021 <br /> <br />
                 
 				
                 <b>Main functionality</b> <br />
@@ -42,6 +42,8 @@ class About extends React.Component {
 			    - Showing the power of Webpack <br />
 				- Using TypeScript with React in .tsx files <br />
 				- Using React with JS in .jsx files <br />
+				- Babel 7 for compiling TypeScript files instead of the TypeScript compiler <br />
+				- The TypeScript type checking is handled by the Webpack plugin <br />"fork-ts-checker-webpack-plugin" which use the tsconfig.json <br />
                 - Showing routing in React <br />
 				- Custom 404 Error page. Click on the link Secret in the menu for e demo<br />
 				- Serving static assets like images, styles and fonts <br />
