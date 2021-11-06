@@ -28,7 +28,6 @@ npm prod
 
 # React
 
-
 - [`react`](https://www.npmjs.com/package/react) - React is a JavaScript library for creating user interfaces. For creating React components.
 
 - [`react-dom`](https://www.npmjs.com/package/react-dom) - This package serves as the entry point to the DOM and server renderers for React. 
