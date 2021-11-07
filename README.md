@@ -59,7 +59,8 @@ Webpack 5 boilerplate using React, TypeScript, Babel 7, PostCSS and Sass with a 
 # TypeScript
 
 - [`typescript`](https://www.npmjs.com/package/typescript) - TypeScript by NPM
-- [`@babel/preset-typescript`](https://babeljs.io/docs/en/babel-preset-typescript) - Babel TypeScript   - [`@types/react`](https://www.npmjs.com/package/@types/react) - Typechecking React
+- [`@babel/preset-typescript`](https://babeljs.io/docs/en/babel-preset-typescript) - Babel TypeScript
+- [`@types/react`](https://www.npmjs.com/package/@types/react) - Typechecking React
 - [`@types/react-dom`](https://www.npmjs.com/package/@types/react-dom) - Typechecking React Dom 
 
 # webpack
