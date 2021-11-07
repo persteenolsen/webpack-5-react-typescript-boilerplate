@@ -44,20 +44,16 @@ npm prod
 - [`webpack`](https://github.com/webpack/webpack) - Module and asset bundler.
 - [`webpack-cli`](https://github.com/webpack/webpack-cli) - Command line interface for webpack
 - [`webpack-dev-server`](https://github.com/webpack/webpack-dev-server) - Development server for webpack
-- [`webpack-merge`](https://github.com/survivejs/webpack-merge) - Simplify development/production configuration
+- [`webpack-merge`](https://github.com/survivejs/webpack-merge) - Simplify dev/prod configuration
 - [`cross-env`](https://github.com/kentcdodds/cross-env) - Cross platform configuration
-- [`fork-ts-checker-webpack-plugin`] - Lets Webpack do the TypeScript type checking instead of TypeScript compiler - TSC :
+- [`fork-ts-checker-webpack-plugin`](https://github.com/TypeStrong/fork-ts-checker-webpack-plugin)   Lets Webpack do the TypeScript type checking instead of TypeScript compiler - TSC :
 
 # Babel
 
-- [`@babel/core`]
-(https://www.npmjs.com/package/@babel/core) - Transpile ES6+ to backwards compatible JavaScript
-- [`@babel/plugin-proposal-class-properties`]
-(https://babeljs.io/docs/en/babel-plugin-proposal-class-properties) - Use properties on a class
-- [`@babel/preset-env`]
-(https://babeljs.io/docs/en/babel-preset-env) - Smart defaults for Babel
-- [`@babel/plugin-transform-runtime`]
-(https://babeljs.io/docs/en/babel-plugin-transform-runtime) - Helper for Babel to use async/await
+- [`@babel/core`](https://www.npmjs.com/package/@babel/core) - Transpile ES6+ to ES5
+- [`@babel/plugin-proposal-class-properties`](https://babeljs.io/docs/en/babel-plugin-proposal-class-properties) - Use properties on a class
+- [`@babel/preset-env`](https://babeljs.io/docs/en/babel-preset-env) - Smart defaults for Babel
+- [`@babel/plugin-transform-runtime`](https://babeljs.io/docs/en/babel-plugin-transform-runtime) - Helper for Babel to use async/await
 
 
 # Loaders
@@ -72,7 +68,7 @@ npm prod
 
 # Plugins
 
-- [`fork-ts-checker-webpack-plugin`](https://github.com/TypeStrong/fork-ts-checker-webpack-plugin) - Handles the TypeScript type checking 
+- [`fork-ts-checker-webpack-plugin`](https://github.com/TypeStrong/fork-ts-checker-webpack-plugin)  Handles the TypeScript type checking 
 - [`clean-webpack-plugin`](https://github.com/johnagan/clean-webpack-plugin) - Remove/clean build folders
 - [`copy-webpack-plugin`](https://github.com/webpack-contrib/copy-webpack-plugin) - Copy files to build directory
 - [`html-webpack-plugin`](https://github.com/jantimon/html-webpack-plugin) - Generate HTML files from template
