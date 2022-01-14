@@ -1,22 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-// TEST
+// TESTING
 // Remove the HTML tags and the statement will not pass TypeScript types checking 
 // Use the valid HTML tags and the statement will pass TypeScript types checking  
-
-import { FC } from 'react'
-const Hello: FC = () => <p><div style={{color: "green"}}>Hello World :-) <b> - React with TypeScript</b> served at the {new Date().toLocaleDateString()}</div></p>
-
-
-//ReactDOM.render(
-//  <React.StrictMode>
-//    <App />
-//  </React.StrictMode>,
-//  document.getElementById("root")
-//);
-
-
+//import { FC } from 'react'
+//const Hello: FC = () => <p><div style={{color: "green"}}>Hello World :-) <b> - React with TypeScript</b> served at the {new //Date().toLocaleDateString()}</div></p>
 
 
 class About extends React.Component { 
@@ -25,18 +14,15 @@ class About extends React.Component {
 	  
 	     
          <div>
-              
-			  <Hello />
-			  
+              			 			  
 		       <h2>Description</h2><br />
   
                 - This single page application was made in React, TypeScript and Babel 7 with a Webpack 5 configuration
                 <br/> <br/>
 				
-                <b>Last Updated</b>  <br />
-                - 06-11-2021 <br /> <br />
-                
-				
+                <div className="lastupdated"><b>Last Updated</b></div>
+                - 14-01-2022 <br /> <br />
+                				
                 <b>Main functionality</b> <br />
                 				                 
 			    - Showing the power of Webpack <br />

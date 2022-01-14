@@ -5,7 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-// Doing TypeScript type checking instead of TypeScript / TSC
+// Doing TypeScript type checking
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 
 //const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');

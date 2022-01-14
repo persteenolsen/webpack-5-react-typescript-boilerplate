@@ -9,6 +9,9 @@ import Home from 'components/Home/';
 import About from 'components/About/';
 import MyInfo from 'components/MyInfo/';
 
+import DemoTSReact from 'components/DemoTSReact/';
+
+
 import { ListPosts } from 'components/ListPosts/';
 import { SelectedPost } from 'components/SelectedPost/';
 import { EditPost } from 'components/EditPost/';
@@ -41,8 +44,9 @@ export default function BasicRouterExample() {
 	            <div className="navbar-nav">
                        
 					   <Link to="/" className="nav-item nav-link">Home</Link>
-                       <Link to="/about" className="nav-item nav-link">About this App</Link>
+                       <Link to="/about" className="nav-item nav-link">About</Link>
 					   <Link to="/myinfo" className="nav-item nav-link">Per Steen Olsen</Link>
+					   <Link to="/tsdemo" className="nav-item nav-link">React+TypeScript</Link>
 					   <Link to="/listposts" className="nav-item nav-link">Web API</Link>
                        <Link to="/error" className="nav-item nav-link">Secret</Link>
                  
@@ -73,8 +77,12 @@ export default function BasicRouterExample() {
             <About />
           </Route>
 		  
-		   <Route path="/myinfo">
+		  <Route path="/myinfo">
             <MyInfo />
+          </Route>
+		  
+		  <Route path="/tsdemo">
+            <DemoTSReact />
           </Route>
 		  
 		   <Route path="/listposts">
