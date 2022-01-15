@@ -6,7 +6,7 @@ import ReactDOM from "react-dom";
 // Use the valid HTML tags and the statement will pass TypeScript types checking  
 
 import { FC } from 'react'
-const Hello: FC = () => <p><div style={{color: "green"}}>Hello World :-) <b> - React with TypeScript</b> served at the {new Date().toLocaleDateString()}</div></p>
+const Hello: FC = () => <div style={{color: "green"}}>Hello World :-) <b> - React with TypeScript</b> served at the {new Date().toLocaleDateString()}</div>
 
 // Import of an asset using alias in Webpack
 import TSLogo from 'images/typescript.png';
@@ -18,6 +18,7 @@ class DemoTSReact extends React.Component {
          <div>
            
 		   <Hello />
+		   <br />
 			
 		   <h2>React with TypeScript</h2>
 		   
