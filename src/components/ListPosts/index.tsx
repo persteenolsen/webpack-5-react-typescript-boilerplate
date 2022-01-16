@@ -1,12 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
-import ReactDOM from "react-dom";
-
-// TEST
-// Remove the HTML tags and the statement will not pass TypeScript types checking 
-// Use the valid HTML tags and the statement will pass TypeScript types checking  
-import { FC } from 'react'
-const Hello: FC = () => <div style={{color: "green"}}>Hello World :-) <b> - React with TypeScript</b> served at the {new Date().toLocaleDateString()}</div>
 
 
 function ListPosts() {
@@ -81,9 +74,7 @@ function ListPosts() {
            
 		   <div>
 		   
-		     <Hello />
-			 <br />
-			 
+		    			 
              <h2>The result of a GET Request towards a test Web API</h2>
 			 <br />
 			 			 

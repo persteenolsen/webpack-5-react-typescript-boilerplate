@@ -35,4 +35,4 @@ class DemoTSReact extends React.Component {
    }
 }
 
-export default DemoTSReact;
+export { DemoTSReact };
