@@ -10,11 +10,10 @@ const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 
 //const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
 
-
 module.exports = {
-	
+
   // Where webpack looks to start building the bundle and include polyfill
-  entry: [ 'whatwg-fetch', paths.src + '/index.js'],
+  entry: ['whatwg-fetch', paths.src + '/index.js'],
 
   // Where webpack outputs the assets and bundles
   output: {
@@ -22,28 +21,28 @@ module.exports = {
     filename: '[name].bundle.js',
     publicPath: '/',
   },
-    
-    
+
+
   resolve: {
-        extensions: [ '.tsx', '.ts', '.jsx', '.js' ],
-        alias: {
-          'components': pathtoresolve.resolve(__dirname, '../src/components/'),
-          'images': pathtoresolve.resolve(__dirname, '../src/images/'),
-          'styles': pathtoresolve.resolve(__dirname, '../src/styles/'),
-		 }
-    },
-	
+    extensions: ['.tsx', '.ts', '.jsx', '.js'],
+    alias: {
+      'components': pathtoresolve.resolve(__dirname, '../src/components/'),
+      'images': pathtoresolve.resolve(__dirname, '../src/images/'),
+      'styles': pathtoresolve.resolve(__dirname, '../src/styles/'),
+    }
+  },
+
 
   // Customize the webpack build process
   plugins: [
-    
-	
-	//new FriendlyErrorsPlugin(),
-    	
+
+
+    //new FriendlyErrorsPlugin(),
+
     // Removes/cleans build folders and unused assets when rebuilding
     new CleanWebpackPlugin(),
-	
-	 new ForkTsCheckerWebpackPlugin({
+
+    new ForkTsCheckerWebpackPlugin({
       async: false,
     }),
 
@@ -73,21 +72,21 @@ module.exports = {
   // Determine how modules within the project are treated
   module: {
     rules: [
-	    
+
       // Note: These 2 rules could likely be handled in one test: statement.
       // However, using 2seperate statements each sttament could have different options if needed
-      
+
       // Use Babel to transpile JavaScript ES6+ / React files to ES5
-	   {
+      {
         test: /\.(jsx|js)$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader"
         }
       },
-	  
-     // Use Babel to transpile TypeScript and TypeScript / React files to ES5
-	   {
+
+      // Use Babel to transpile TypeScript and TypeScript / React files to ES5
+      {
         test: /\.(tsx|ts)$/,
         exclude: /node_modules/,
         use: {
@@ -100,17 +99,17 @@ module.exports = {
         test: /\.(scss|css)$/,
         use: [
           'style-loader',
-          {loader: 'css-loader', options: {sourceMap: true, importLoaders: 1}},
-          {loader: 'postcss-loader', options: {sourceMap: true}},
-          {loader: 'sass-loader', options: {sourceMap: true}},
+          { loader: 'css-loader', options: { sourceMap: true, importLoaders: 1 } },
+          { loader: 'postcss-loader', options: { sourceMap: true } },
+          { loader: 'sass-loader', options: { sourceMap: true } },
         ],
       },
 
       // Images: Copy image files to build folder
-      {test: /\.(?:ico|gif|png|jpg|jpeg)$/i, type: 'asset/resource'},
+      { test: /\.(?:ico|gif|png|jpg|jpeg)$/i, type: 'asset/resource' },
 
       // Fonts and SVGs: Inline files
-      {test: /\.(woff(2)?|eot|ttf|otf|svg|)$/, type: 'asset/inline'},
+      { test: /\.(woff(2)?|eot|ttf|otf|svg|)$/, type: 'asset/inline' },
     ],
   },
 }

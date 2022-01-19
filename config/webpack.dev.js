@@ -13,7 +13,7 @@ module.exports = merge(common, {
 
   // Control how source maps are generated
   devtool: 'inline-source-map',
-    
+
   // Enable: It is possible testing in IE 11, but reload / replacement will break due to a bug in webpack 5 !
   // Disable: It is possible to use hot relad / replacement but not using IE 11 !
   // target: ['web', 'es5'], 
@@ -29,11 +29,11 @@ module.exports = merge(common, {
   },
 
   plugins: [
-    
-	// Note: Only update what has changed on hot reload 
-	// Require the statement "module.hot.accept();" in the root index.jsx !
+
+    // Note: Only update what has changed on hot reload 
+    // Require the statement "module.hot.accept();" in the root index.jsx !
     new webpack.HotModuleReplacementPlugin(),
-	
-	new FriendlyErrorsPlugin()
+
+    new FriendlyErrorsPlugin()
   ],
 })
