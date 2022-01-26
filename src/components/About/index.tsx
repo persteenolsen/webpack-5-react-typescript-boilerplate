@@ -14,10 +14,11 @@ class About extends React.Component {
                 <br/> <br/>
 				
                 <div className="lastupdated"><b>Last Updated</b></div>
-                - 19-01-2022 <br /> <br />
+                - 26-01-2022 <br /> <br />
                 				
                 <b>Main functionality</b> <br />
-                				                 
+                
+				- Build with Node 12.16.2 and tested with Node 14.17.3 <br />
 			    - Showing the power of Webpack <br />
 				- Using TypeScript with React in .tsx files <br />
 				- Using React with JS in .jsx files <br />
