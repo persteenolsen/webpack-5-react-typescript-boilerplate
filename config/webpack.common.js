@@ -74,7 +74,7 @@ module.exports = {
     rules: [
 
       // Note: These 2 rules could likely be handled in one test: statement.
-      // However, using 2seperate statements each sttament could have different options if needed
+      // However, using 2 seperate statements each sttament could have different options if needed
 
       // Use Babel to transpile JavaScript ES6+ / React files to ES5
       {
