@@ -64,5 +64,8 @@
     "react-hook-form": "^6.15.5",
     "react-router-dom": "^5.2.0",
     "whatwg-fetch": "^3.6.2"
+  },
+  "volta": {
+    "node": "14.21.3"
   }
 }

@@ -13,8 +13,8 @@ class About extends React.Component {
                 - This single page application was made in React, TypeScript and Babel 7 with a Webpack 5 configuration
                 <br/> <br/>
 				
-                <div className="lastupdated"><b>Last Updated</b></div>
-                - 14-07-2023 <br /> <br />
+                <div className="lastupdated"><b>Last Updated: </b></div>
+                - 03-01-2025 <br /> <br />
                 				
                 <b>Main functionality</b> <br />
                 
