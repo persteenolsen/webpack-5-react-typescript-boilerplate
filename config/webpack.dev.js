@@ -3,7 +3,7 @@ const paths = require('./paths')
 const webpack = require('webpack')
 const { merge } = require('webpack-merge')
 
-const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
+//const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
 
 const common = require('./webpack.common.js')
 
@@ -21,7 +21,11 @@ module.exports = merge(common, {
   // Spin up a server for quick development
   devServer: {
     historyApiFallback: true,
-    contentBase: paths.build,
+    
+    // Updated: 08-01-2025
+    // contentBase: paths.build,
+    static: paths.build,
+
     open: true,
     compress: true,
     hot: true,
@@ -34,6 +38,6 @@ module.exports = merge(common, {
     // Require the statement "module.hot.accept();" in the root index.jsx !
     new webpack.HotModuleReplacementPlugin(),
 
-    new FriendlyErrorsPlugin()
+   // new FriendlyErrorsPlugin()
   ],
 })

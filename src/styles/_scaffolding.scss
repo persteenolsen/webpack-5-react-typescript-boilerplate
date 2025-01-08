@@ -1,9 +1,11 @@
+@use 'variables';
+
 html {
-  font-size: $font-size;
-  font-family: $font-family;
-  background: $background-color;
-  color: $font-color;
-  max-width: $page-width;
+  font-size: variables.$font-size;
+  font-family: variables.$font-family;
+  background: variables.$background-color;
+  color: variables.$font-color;
+  max-width: variables.$page-width;
   line-height: 1.4;
 }
 
@@ -12,36 +14,21 @@ body {
   width: 100vw;
 }
 
-
 #root {
-
- // Note: Not well for the list of Post on very small screens
- // display: flex;
- // align-items: center;
- // justify-content: center;
- // flex-direction: column;
- // align-self: center;
-  //height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+ // height: 100vh;
 }
 
-h2 {
-  text-align: left;
-  max-width: 90vw;
-}
-
-.lastupdated {
+h1 {
    color: green;
+   text-align: left;
+   max-width: 90vw;
 }
 
-div {
-     text-align: left;
+.test {
+    color: red;
 }
-
-  .test { 
-        color: green;
-      }
-
-.custom-text-color-button {
-    color: white; 
-}
-

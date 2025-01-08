@@ -14,12 +14,14 @@ class About extends React.Component {
                 <br/> <br/>
 				
                 <div className="lastupdated"><b>Last Updated: </b></div>
-                - 03-01-2025 <br /> <br />
+                - 08-01-2025 <br /> <br />
                 				
                 <b>Main functionality</b> <br />
                 
-				- Build with Node 12.16.2 and tested with Node 14.17.3 <br />
-			    - Showing the power of Webpack <br />
+				- History of Node Versions 12.16.2 => 14.17.3 => 20.18.1 <br />
+                                - React 17.0.1<br />
+                                - TypeScript 5.7.2<br />
+			        - Showing the power of Webpack <br />
 				- Using TypeScript with React in .tsx files <br />
 				- Using React with JS in .jsx files <br />
 				- Babel 7 for compiling TypeScript files instead of the TypeScript compiler <br />
@@ -27,7 +29,7 @@ class About extends React.Component {
                 - Showing routing in React <br />
 				- Custom 404 Error page. Click on the link Secret in the menu for e demo<br />
 				- Serving static assets like images, styles and fonts <br />
-				- Support for the IE 11 Browser when using React Hook Form<br />
+				- Support for the IE 11 Browser when using React Hook Form 6 with React 17.0.1<br />
 				- GET, POST, PUT and DELETE operations towards the test Web API <br /> <br />
 			                  
 			   

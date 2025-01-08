@@ -2,9 +2,9 @@
 
 Webpack 5 boilerplate using React, TypeScript, Babel 7, PostCSS and Sass with a hot dev server and an optimized production build. Babel compiles TypeScript to ES5. The Webpack plugin fork-ts-checker-webpack-plugin does the type checking. It is possible to use both React with JS in .jsx files and React with TS in .tsx files. Except from the main index.js and the webpack files the modules are ready in jsx and tsx.
 
-Last updated: 03-01-2025
+Last updated: 08-01-2025
 
-Node Version: 14.21.3
+Node Version: 20.18.1
 
 # Usage
 
@@ -77,7 +77,7 @@ Node Version: 14.21.3
 
 - [`babel-loader`](https://webpack.js.org/loaders/babel-loader/) - Transpile files - Babel/webpack
 - [`sass-loader`](https://webpack.js.org/loaders/sass-loader/) - Load SCSS and compile to CSS
-- [`node-sass`](https://github.com/sass/node-sass) - Node Sass
+- [`sass`](https://github.com/sass/node-sass) - Sass
 - [`postcss-loader`](https://webpack.js.org/loaders/postcss-loader/) - Process CSS with PostCSS
 - [`postcss-preset-env`](https://www.npmjs.com/package/postcss-preset-env) - Default for PostCSS
 - [`css-loader`](https://webpack.js.org/loaders/css-loader/) - Resolve CSS imports
