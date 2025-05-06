@@ -13,15 +13,15 @@ class About extends React.Component {
                 - This single page application was made in React, TypeScript and Babel 7 with a Webpack 5 configuration
                 <br/> <br/>
 				
-                <div className="lastupdated"><b>Last Updated: </b></div>
-                - 08-01-2025 <br /> <br />
+                <div className="test"><b>Last Updated: </b></div>
+                - 06-05-2025 <br /> <br />
                 				
                 <b>Main functionality</b> <br />
                 
-				- History of Node Versions 12.16.2 => 14.17.3 => 20.18.1 <br />
-                                - React 17.0.1<br />
-                                - TypeScript 5.7.2<br />
-			        - Showing the power of Webpack <br />
+				- History of Node Versions 12.16.2 - 14.17.3 - 20.18.1 <br />
+                - React 17.0.1<br />
+                - TypeScript 5.7.2<br />
+			    - Showing the power of Webpack <br />
 				- Using TypeScript with React in .tsx files <br />
 				- Using React with JS in .jsx files <br />
 				- Babel 7 for compiling TypeScript files instead of the TypeScript compiler <br />
