@@ -14,11 +14,11 @@ class About extends React.Component {
                 <br/> <br/>
 				
                 <div className="test"><b>Last Updated: </b></div>
-                - 06-05-2025 <br /> <br />
+                - 07-05-2025 <br /> <br />
                 				
                 <b>Main functionality</b> <br />
                 
-				- History of Node Versions 12.16.2 - 14.17.3 - 20.18.1 <br />
+				- History of Node Versions 12.16.2 - 14.17.3 - 20.18.1 - 22.15.0 <br />
                 - React 17.0.1<br />
                 - TypeScript 5.7.2<br />
 			    - Showing the power of Webpack <br />
@@ -29,7 +29,7 @@ class About extends React.Component {
                 - Showing routing in React <br />
 				- Custom 404 Error page. Click on the link Secret in the menu for e demo<br />
 				- Serving static assets like images, styles and fonts <br />
-				- Support for the IE 11 Browser when using React Hook Form 6 with React 17.0.1<br />
+				- Partly support for older Browsers when using React Hook Form 6 with React 17.0.1<br />
 				- GET, POST, PUT and DELETE operations towards the test Web API <br /> <br />
 			                  
 			   

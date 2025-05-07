@@ -1,7 +1,9 @@
 // The use of "useBuiltIns" in .babelrc would take care of loading polyfill in most cases but somehow not here!
 // Note: As an alternative use babel polyfill by cdn in the template.html
 import "core-js/stable";
-import "regenerator-runtime/runtime";
+
+// 07-05-2025: Needed to out comment the below while upgrading to Node 22
+// import "regenerator-runtime/runtime";
 
 import React, { useState, useEffect } from 'react';
 import { Link, useParams } from "react-router-dom";
